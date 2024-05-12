@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1;
+  background-color: #ffffff;
+}
+
+/*ここからheader*/
+img {
+  max-width: 100%;
+}
+
+.header-inner {
+  max-width: 1200px;
+  height: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-menu-button {
+  display: none;
+}
+
+.header-logo {
+  display: block;
+  width: 170px;
+}
+
+.site-menu ul {
+  display: flex;
+}
+
+.site-menu ul li a {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.site-menu ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+/*ここからfooter*/
+.footer {
+  color: #ffffff;
+  background-color: #24211b;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  display: block;
+  width: 235px;
+  margin-top: 30px;
+}
+
+
+
+.copyright {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+/*以下はモバイル向け*/
+/*以下に書いたものは800px以下の時だけ適用される*/
+@media (max-width: 800px) {
+  /*ここからheader*/
+  .site-menu ul {
+    display: block; /*縦並びに変更*/
+    text-align: center; /*中央揃えになる*/
+  }
+
+  .site-menu li {
+    margin-top: 20px;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    height: 50px;
+    z-index: 10;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+    position: relative; /*これにより、header-logoの子要素に対して、header-logoを基準にした位置指定ができるようになる*/
+  }
+
+  .header-logo {
+    width: 100px;
+  }
+
+  .header-site-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    background-color: #736e62;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: none;
+  }
+
+  .header-site-menu.is-show {
+    display: block;
+  }
+
+  .toggle-menu-button {
+    display: block;
+    width: 44px;
+    height: 34px;
+    background-image: url(/img/common-img/icon-menu.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent; /*transparentは透明という意味*/
+    border: none; /*枠線削除*/
+    border-radius: 0; /*角丸解除*/
+    outline: none; /*タップ時の枠線削除*/
+  }
+
+  /*以下footer*/
+  .main {
+    padding-top: 50px;
+  }
+
+  .footer-logo {
+    margin-top: 60px;
+  }
+
+  .footer-tel {
+    font-size: 20px;
+  }
+
+  .copyright {
+    margin-top: 50px;
+  }
+}
