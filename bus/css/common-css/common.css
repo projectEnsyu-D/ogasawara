@@ -54,6 +54,12 @@ img {
 
 .site-menu ul {
   display: flex;
+  font-size: 22px;
+}
+
+.site-menu li:hover {
+  color: #165e83;
+  text-decoration: underline;
 }
 
 .site-menu ul li a {
@@ -82,8 +88,6 @@ img {
   width: 235px;
   margin-top: 30px;
 }
-
-
 
 .copyright {
   font-size: 14px;
