@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bacabouMenu</title>
+    <script src="../js/common-js/toggle-menu.js"></script>
+    <script src="../js/lunch-js/lunch.js"></script>
+    <link href="../css/common-css/common.css" rel="stylesheet" />
+    <link href="../css/lunch-css/lunch.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+          <a class="header-logo" href="/index.html">
+            <img src="../img/common-img/header-logo.png" alt="D-Cam" />
+          </a>
+          <button class="toggle-menu-button"></button>
+          <div class="header-site-menu">
+            <nav class="site-menu">
+              <ul>
+                <li><a href="../bus.html">BUS</a></li>
+                <li><a href="../lunch.html">LUNCH</a></li>
+                <li><a href="../class.html">CLASS</a></li>
+                <li><a href="../todo.html">TODO</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+    </header>
+
+    <main>
+      <div class = "lunch">
+        <p class="lunch-title">Lunch</p>
+      </div>
+
+      <div class = shop-label>
+        <div class="shop-title">馬鹿坊</div>
+        <form name="totalForm">
+          <div class="total-label">合計：<input type="text" name="total"></div>
+        </form>
+      </div>
+      <div class = "shop-menu">
+        <form name="menuForm">
+          <input type="checkbox" value="500" onClick="money_total()">
+          テスト１ （500円）
+          <input type="checkbox" value="600" onClick="money_total()">
+          テスト２ （600円）
+          <input type="checkbox" value="700" onClick="money_total()">
+          テスト３ （700円）
+          <input type="checkbox" value="800" onClick="money_total()">
+          テスト４ （800円）
+          <input type="checkbox" value="900" onClick="money_total()">
+          テスト５ （900円）
+        </form>
+      </div>
+
+      <div class="return">
+      <a href="../lunch.html">戻る</a><br>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+        <nav class="site-menu">
+          <ul>
+            <li><a href="../bus.html">BUS</a></li>
+            <li><a href="../lunch.html">LUNCH</a></li>
+            <li><a href="../class.html">CLASS</a></li>
+            <li><a href="../todo.html">TODO</a></li>
+          </ul>
+        </nav>
+        <a class="footer-logo" href="index.html">
+          <img src="../img/common-img/footer-logo.png" alt="D-Cam" />
+        </a>
+        <p class="copyright"><small>&copy;teamD</small></p>
+    </footer>
+
+</body>
+</html>

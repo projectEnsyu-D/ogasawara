@@ -1,0 +1,56 @@
+.lunch {
+    color: #ffffff;
+    background-color: #24211b;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lunch-title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .shop-label{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    
+  }
+
+  .shop-title{
+    padding-left: 60px;
+  }
+
+  .title-label{
+    padding-left: 60px;
+  }
+
+  .shop-menu{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .shop-list {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .return{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
