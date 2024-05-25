@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>D-Cam</title>
     <script src="/js/common-js/toggle-menu.js"></script>
+    <script src="/js/bus-js/jsonParse.js"></script>
     <link href="./css/common-css/common.css" rel="stylesheet" />
     <link href="./css/bus-css/busStyle.css" rel="stylesheet" />
   </head>
@@ -40,21 +41,21 @@
         <section class="timeTable">
             <div class="toAit">
                 <h2>八草→愛工大</h2>
-                <p>First</p>
-                <h2 class="timeToAit">12:05</h2>
-                <p>Second</p>
-                <h2 class="timeToAit">12:15</h2>
-                <p>Third</p>
-                <h2 class="timeToAit">12:25</h2>
+                <p id="firstAit"></p>
+                <h2 class="timeToAit" id="firstToAit"></h2>
+                <p id="secondAit"></p>
+                <h2 class="timeToAit" id="secondToAit"></h2>
+                <p id="thirdAit"></p>
+                <h2 class="timeToAit" id="thirdToAit"></h2>
             </div>
             <div class="toYakusa">
                 <h2>愛工大→八草</h2>
-                <p>First</p>
-                <h2 class="timeToYakusa">12:00</h2>
-                <p>Second</p>
-                <h2 class="timeToYakusa">12:10</h2>
-                <p>Third</p>
-                <h2 class="timeToYakusa">12:20</h2>
+                <p id="firstYakusa"></p>
+                <h2 class="timeToYakusa" id="firstToYakusa"></h2>
+                <p id="secondYakusa"></p>
+                <h2 class="timeToYakusa" id="secondToYakusa"></h2>
+                <p id="thirdYakusa"></p>
+                <h2 class="timeToYakusa" id="thirdToYakusa"></h2>
             </div>
         </section>
         <hr>
