@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>D-Cam</title>
-    <script src="/js/common-js/toggle-menu.js"></script>
-    <script src="/js/bus-js/jsonParse.js"></script>
+    <script src="js/common-js/toggle-menu.js"></script>
+    <script src="js/bus-js/jsonParse.js"></script>  
     <link href="./css/common-css/common.css" rel="stylesheet" />
     <link href="./css/bus-css/busStyle.css" rel="stylesheet" />
   </head>
@@ -33,35 +33,35 @@
     <main>
         <!---ここにそれぞれの内容を書いていく-->
         <h1 class="title">バス時刻案内</h1>
-        <div>
+        <div id="subtitle">
             <h2 class="sub-title">
                 Next Time
             </h2>
         </div>
-        <section class="timeTable">
+        <section id="timeTable">
             <div class="toAit">
                 <h2>八草→愛工大</h2>
-                <p id="firstAit"></p>
+                <p id="firstAit">first</p>
                 <h2 class="timeToAit" id="firstToAit"></h2>
-                <p id="secondAit"></p>
+                <p id="secondAit">second</p>
                 <h2 class="timeToAit" id="secondToAit"></h2>
-                <p id="thirdAit"></p>
-                <h2 class="timeToAit" id="thirdToAit"></h2>
+                <p id="thirdAit">third</p>
+                <h2 class="timeToAit" id="secondToAit"></h2>
             </div>
             <div class="toYakusa">
                 <h2>愛工大→八草</h2>
-                <p id="firstYakusa"></p>
+                <p id="firstYakusa">first</p>
                 <h2 class="timeToYakusa" id="firstToYakusa"></h2>
-                <p id="secondYakusa"></p>
+                <p id="secondYakusa">second</p>
                 <h2 class="timeToYakusa" id="secondToYakusa"></h2>
-                <p id="thirdYakusa"></p>
+                <p id="thirdYakusa">third</p>
                 <h2 class="timeToYakusa" id="thirdToYakusa"></h2>
             </div>
         </section>
         <hr>
         <section>
             <h2 class="sub-title">本日の運行ダイヤ</h2>
-            <h2 class="daiya">Aダイヤです</h2>
+            <h2 id="daiya"></h2>
         </section>
         <hr>
         <section>
