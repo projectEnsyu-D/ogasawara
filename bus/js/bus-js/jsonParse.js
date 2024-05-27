@@ -4,12 +4,13 @@ function onDisplay(hour1, hour2, hour3, minutes1, minutes2, minutes3, isFirst,
 ) {
   //First
   if(isFirst){
-    document.getElementById(firstTo).innerHTML =
+    document.getElementById(firstTo).innerText =
       "[始発] 0" + hour3 + ":" + ("00" + minutes1).slice(-2);
   }else if(minutes1 == -1){
-    document.getElementById(firstTo).innerHTML = "本日の運行は終了しました";
+    document.getElementById(first).style.display = "none";
+    document.getElementById(firstTo).innerText = "本日の運行は終了しました";
   }else{
-    document.getElementById(id1).innerHTML =
+    document.getElementById(firstTo).innerText =
       hour1 + ":" + ("00" + minutes1).slice(-2);
   }
 
@@ -18,7 +19,7 @@ function onDisplay(hour1, hour2, hour3, minutes1, minutes2, minutes3, isFirst,
     document.getElementById(second).style.display = "none";
     document.getElementById(secondTo).style.display = "none";
   }else{
-    document.getElementById(secondTo).innerHTML =
+    document.getElementById(secondTo).innerText =
       hour2 + ":" + ("00" + minutes2).slice(-2);
   }
 
@@ -27,7 +28,7 @@ function onDisplay(hour1, hour2, hour3, minutes1, minutes2, minutes3, isFirst,
     document.getElementById(third).style.display = "none";
     document.getElementById(thirdTo).style.display = "none";
   }else{
-    document.getElementById(thirdTo).innerHTML =
+    document.getElementById(thirdTo).innerText =
       hour3 + ":" + ("00" + minutes3).slice(-2);
   }
 }
@@ -60,7 +61,7 @@ async function main() {
   //やっぱりDOM操作はonDisplay関数にまとめる
   //onDisplayは複数回実行するからまとめられない
   if (firstBusInfo["schedule"] == "") {
-    document.getElementById("daiya").innerHTML 
+    document.getElementById("daiya").innerText 
       = "本日バスの運行はありません";
     document.getElementById("subtitle").style.display = "none";
     document.getElementById("timeTable").style.display = "none";
@@ -70,7 +71,8 @@ async function main() {
   //ダイヤの表示
   //これもonDisplay関数にまとめた方が良いかも
   //onDisplayは複数回実行するからまとめられない
-  document.getElementById("daiya").innerHTML 
+  //セキュリティの観点から文字だけならinnerHTMLよりinnerTextの方がいい
+  document.getElementById("daiya").innerText
     = "今日は" + firstBusInfo["schedule"] + "ダイヤです";
 
   //onDisplay
