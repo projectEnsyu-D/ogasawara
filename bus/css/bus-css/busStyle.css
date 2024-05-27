@@ -1,52 +1,51 @@
 @charset "utf-8";
 
 h1 {
-    font-size: 45px;
+  font-size: 45px;
 }
 
 h2 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 p {
-    font-size: 30px;
-    padding: 20px;
+  font-size: 30px;
+  padding: 20px;
 }
 
 hr {
-    margin-top: 90px;
-    width: 80%;
-    margin-left: 10%;
+  margin-top: 90px;
+  width: 80%;
+  margin-left: 10%;
 }
 
-
 .title {
-    height: 150px;
-    background-color: #141210;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    text-shadow: 1px 1px 10px #4b2c14;
+  height: 150px;
+  background-color: #141210;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #4b2c14;
 }
 
 .sub-title {
-    height: 150px;
-    background-position: center center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
+  height: 150px;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .sub-title::after {
-  content: '';
+  content: "";
   display: block;
   width: 100px;
   height: 3px;
@@ -55,60 +54,61 @@ hr {
 }
 
 #daiya {
-    background-position: center center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #c1e796;
-    width: 80%;
-    margin-left: 10%;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c1e796;
+  width: 80%;
+  margin-left: 10%;
 }
 
 #timeTable {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
 }
 
 .toAit {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .toYakusa {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .timeToAit {
-    background-color: #f8b19b;
-    width: 150%;
-    text-align: center;
+  background-color: #f8b19b;
+  width: 120%;
+  text-align: center;
 }
 
 .timeToYakusa {
-    background-color: #92d6f6;
-    width: 150%;
-    text-align: center;
+  background-color: #92d6f6;
+  width: 120%;
+  text-align: center;
 }
 
 .link {
-    font-size: 25px;
-    padding-left: 15%;
-    margin-bottom: 50px;
-    list-style: disc;
+  font-size: 25px;
+  padding-left: 15%;
+  margin-bottom: 50px;
+  list-style: disc;
 }
 
 .link li {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .link li:hover {
-    color: #165e83;
-    text-decoration: underline;
+  color: #165e83;
+  text-decoration: underline;
 }
