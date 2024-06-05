@@ -20,6 +20,7 @@ function onDisplay(
       "[始発] 0" + hour1 + ":" + ("00" + minutes1).slice(-2);
   } else if (minutes1 == -1 || minutes1 == undefined) {
     document.getElementById(first).style.display = "none";
+    document.getElementById(firstTo).style.marginTop = "10px";
     document.getElementById(firstTo).innerText = "本日の運行は終了しました";
   } else {
     document.getElementById(firstTo).innerText =

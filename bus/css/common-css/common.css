@@ -54,12 +54,6 @@ img {
 
 .site-menu ul {
   display: flex;
-  font-size: 22px;
-}
-
-.site-menu li:hover {
-  color: #165e83;
-  text-decoration: underline;
 }
 
 .site-menu ul li a {
@@ -88,6 +82,7 @@ img {
   width: 235px;
   margin-top: 30px;
 }
+
 
 .copyright {
   font-size: 14px;
@@ -136,7 +131,7 @@ img {
     left: 0;
     right: 0;
     color: #ffffff;
-    background-color: #736e62;
+    background-color: #24211b;
     padding-top: 30px;
     padding-bottom: 50px;
     display: none;
@@ -167,10 +162,6 @@ img {
 
   .footer-logo {
     margin-top: 60px;
-  }
-
-  .footer-tel {
-    font-size: 20px;
   }
 
   .copyright {

@@ -1,15 +1,15 @@
 @charset "utf-8";
 
 h1 {
-  font-size: 45px;
+  font-size: 32px;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 28px;
 }
 
 p {
-  font-size: 30px;
+  font-size: 24px;
   padding: 20px;
 }
 
@@ -20,17 +20,15 @@ hr {
 }
 
 .title {
-  height: 150px;
-  background-color: #141210;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  color: #ffffff;
+  background-color: #24211b;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  color: #ffffff;
-  text-shadow: 1px 1px 10px #4b2c14;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .sub-title {
@@ -87,18 +85,18 @@ hr {
 
 .timeToAit {
   background-color: #f8b19b;
-  width: 120%;
+  width: 150%;
   text-align: center;
 }
 
 .timeToYakusa {
   background-color: #92d6f6;
-  width: 120%;
+  width: 150%;
   text-align: center;
 }
 
 .link {
-  font-size: 25px;
+  font-size: 24px;
   padding-left: 15%;
   margin-bottom: 50px;
   list-style: disc;
@@ -108,7 +106,37 @@ hr {
   margin-top: 20px;
 }
 
-.link li:hover {
+.link a:hover {
   color: #165e83;
   text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  main {
+    margin-top: 50px;
+  }
+
+  .title {
+    height: 120px;
+  }
+
+  .sub-title {
+    margin-top: 0;
+  }
+
+  #timeTable {
+    display: block;
+  }
+
+  .timeToAit {
+    width: 85%;
+  }
+
+  .timeToYakusa {
+    width: 85%;
+  }
+
+  .toYakusa{
+    margin-top: 50px;
+  }
 }
